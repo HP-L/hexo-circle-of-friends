@@ -13,16 +13,17 @@
 #   - volantis：volantis主题
 #   - Yun：Yun主题
 #   - stellar：stellar主题
-# 支持配置多个友链页面并指定不同主题策略，每个用{}分隔，它们会被同时爬取，数据保存在一起。***至少配置一个***
-LINK:
-    - {link: "https://zishu.is-cool.dev/friends/", theme: "stellar"}  # 友链页地址1，修改为你的友链页地址
-#    - {link: "https://noionion.top/link/", theme: "butterfly"} # 友链页地址2
-#    - {link: "https://immmmm.com/about/", theme: "common1"} # 友链页地址3
-
+# 支持配置多个友链页面并指定不同主题策略，每个用{}分隔，它们会被同时爬取，数据保存在一起。
+LINK: [
+     { link: "https://hp-l.github.io/friend/", theme: "stellar" },  # 友链页地址1，修改为你的友链页地址
+    #  { link: "https://blog.class1v1.com/link/", theme: "common2" }, # 友链页地址2
+#     { link: "https://immmmm.com/about/", theme: "common1" }, # 友链页地址3
+#     ...
+]
 
 # 配置项友链
 # enable：# 是否启用配置项友链 true/false（针对还未适配主题或者有定制需求的用户）
-# json_api：通过json格式配置友链，详见：https://fcircle-doc.js.cool/#/developmentdoc?id=配置项json友链
+# json_api：通过json格式配置友链，详见：https://fcircle-doc.yyyzyyyz.cn/#/developmentdoc?id=配置项json友链
 # list字段填写格式：["name", "link", "avatar","suffix"]，其中：
 #       name：必填，友链的名字
 #       link：必填，友链主页地址
@@ -61,7 +62,7 @@ GITHUB_FRIENDS_LINKS: {
     owner: "HP-L",  # 填写你的github用户名
     repo: "blog_friends",  # 填写你的github仓库名
     state: "open",  # 填写抓取的issue状态(open/closed)
-    label: "active",
+    label: "active",  # 填写抓取的issue标签
 }
 
 # block site list
@@ -72,6 +73,9 @@ BLOCK_SITE: [
 #    ^http://,  # http开头的全部屏蔽
 ]
 
+# 每个友链最多获取几篇文章，此值越大，则抓取的文章上限越多，相应地运行速度也会降低，反之亦然
+# 请设置一个正整数
+MAX_POSTS_NUM: 25
 
 # 启用HTTP代理，此项设为true，并且需要添加一个环境变量，名称为PROXY，值为[IP]:[端口]，比如：192.168.1.106:8080
 HTTP_PROXY: false
