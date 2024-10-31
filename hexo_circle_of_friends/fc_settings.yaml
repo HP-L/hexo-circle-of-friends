@@ -37,6 +37,7 @@ SETTINGS_FRIENDS_LINKS: {
         ["小土刀2.0", "https://wdxtub.com/", "https://wdxtub.com/favicon.ico"],
         ["国光", "https://www.sqlsec.com/", "https://html.sqlsec.com/hexo/avatar.png"],
         ["黑果小兵", "https://blog.daliansky.net/", "https://blog.daliansky.net/favicon.ico"],
+        ["姓王者的博客", "https://xingwangzhe.fun/atom.xml/", "https://xingwangzhe.fun/images/apple-touch-icon-next.png"],
         # 示例2：使用suffix的配置如下
         # 程序目前自动获取 "atom.xml", "feed/atom", "rss.xml", "rss2.xml", "feed", "index.xml" 这些后缀
         # 如果目标地址的后缀不在其中，就可以在这里添加
