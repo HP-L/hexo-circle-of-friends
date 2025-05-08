@@ -37,10 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@main
-    
-    - name: Keep alive
-      uses: gautamkrishnar/keepalive-workflow@master
+      uses: actions/checkout@v4main
 
     - name: Set up Python
       uses: actions/setup-python@main
