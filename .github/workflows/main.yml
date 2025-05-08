@@ -120,4 +120,4 @@ jobs:
         email: github-actions@noreply.github.com
 
     - name: keep alive
-      uses: gautamkrishnar/keepalive-workflow@main # keep workflows from being suspended when no commit for a long time
+      uses: gautamkrishnar/keepalive-workflow@v2 # keep workflows from being suspended when no commit for a long time
