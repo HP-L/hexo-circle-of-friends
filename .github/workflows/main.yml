@@ -38,6 +38,9 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
+    
+    - name: Keep alive
+      uses: gautamkrishnar/keepalive-workflow@master
 
     - name: Set up Python
       uses: actions/setup-python@main
